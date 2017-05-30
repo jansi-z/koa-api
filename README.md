@@ -16,7 +16,7 @@ Once you have all of items listed above, simply follow these directions.
 4. Open `app.js`.
 5. Inside `app.js`, look for `mongoose.connect` on lines 20 and 21.
 6. Inside `mongoose.connect`, replace `'/path/to/your/mongo'` with the Mongo database URI of your choice. Save the change.
-7. From the terminal, enter `npm start`. The app should fire right up.
+7. From the terminal, enter `npm start`. The app should (hopefully) fire right up.
 8. Open Postman, then import the `koa-demo.postman_collection.json` file.
 9. You should be able to interact with the API with ease now.
 10. Enjoy!
