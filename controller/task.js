@@ -3,7 +3,7 @@ const Task = require('../model/Task')
 exports.getTasks = async (ctx) => {
 	const tasks = await Task.find({})
 	if (!tasks) {
-		throw new Error("There are no tasks located here.")
+		throw new Error("There was an error retrieving your tasks.")
 	} else {
 		ctx.body = tasks
 	}
