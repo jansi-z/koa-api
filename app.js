@@ -14,11 +14,11 @@ const task = require('./controller/task')
 const app = new koa()
 
 /*
-	Mongoose Config	
+	Mongoose Config
 */
 mongoose.Promise = require('bluebird')
 mongoose
-.connect('/path/to/your/mongo')
+.connect('mongodb://localhost:27017/koa_api_1')
 .then((response) => {
 	console.log('mongo connection created')
 })
